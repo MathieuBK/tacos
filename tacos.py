@@ -28,7 +28,7 @@ def autoplay_audio(file_path: str):
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
-            <audio controls autoplay="true" allow="autoplay" style="display:none">
+            <audio controls autoplay="true" allow="autoplay" style="">
             <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
             </audio>
             """
@@ -41,7 +41,7 @@ def autoplay_audio(file_path: str):
 # st.write("# Auto-playing Audio!")
 
 # st.markdown("![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)")
-st.markdown("![Alt Text](https://i.gifer.com/CKA6.gif)")
+st.markdown("![Alt Text](https://media.tenor.com/RQKAyM7ZHA0AAAAM/banana-dance.gif)")
 
 autoplay_audio("local_audio.mp3")
 
